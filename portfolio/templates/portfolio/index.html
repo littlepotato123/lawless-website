@@ -10,6 +10,39 @@
     background-color: white;
   }
 
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 150vh;
+  }
+
+  main div {
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  main .businessDescription {
+    background-color: #848ccf;
+    grid-row: 1/2;
+  }
+
+  main .aboutme {
+    background-color: #a2d5f2;
+    grid-row: 2/3;
+  }
+  
+  main .extraContact {
+    background-color: #ffd36b;
+    font-size: 20px;
+  }
+
+  main .questions {
+    background-color: #d3de32;
+  }
+
   input[type=text], input[type=password] {
         width: 100%;
         padding: 15px;
@@ -112,6 +145,11 @@
 .cont {
   text-align: center;
 }
+
+.mt-5 {
+  position: relative;
+  padding-top: 100px;
+}
 </style>
 
 <div class="row justify-content-center my-3">
@@ -183,24 +221,5 @@
     </main>
 </body>
 </html>
-<h2 class="mt-5">Assignments</h2>
-<div></div>
-<hr>
-<div class="row">
-    {% for project in projects %}
-    <div class="col-lg-4 col-md-6">
-
-        {% if project.url %}
-        <a href="{{ project.url }}">
-            <img src="{{ project.image.url }}" class="img-fluid mb-2">
-        </a>
-        {% else %}
-
-        <img src="{{ project.image.url }}" class="img-fluid mb-2"> {% endif %}
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-    </div>
-    {% endfor %}
-</div>
 
 {% endblock %}
