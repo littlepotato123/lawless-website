@@ -5,6 +5,115 @@
     </div>
 </div>
 
+<style>
+  body {
+    background-color: white;
+  }
+
+  input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 0 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+        }
+
+        hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 30px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            position: relative;
+            top: 10px;
+            opacity: 0.9;
+        }
+
+        button:hover {
+        opacity:1;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+        float: right;
+        width: 50%;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+
+        .scroll-contact {
+            font-size: 25px;
+            width: 200px;
+            border-radius: 5px;
+            position: relative;
+            top: 65px;
+            left: 50%;
+            background-color: #a2d5f2;
+            padding: 10px;
+            text-decoration: none;
+            color: #fafafa;
+        }
+        #footer {
+            background-color: #ff7e67;
+            border-radius: 5px;
+            margin: 20px 20px 20px 20px;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact .fa:before {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.contact li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.cont {
+  text-align: center;
+}
+</style>
+
 <div class="row justify-content-center my-3">
     <div class="col-5">
     </div>
@@ -16,62 +125,61 @@
 </head>
 <body>
     <main>
-        <div class="box1">
-            <p>248 808 2790 </p>
-            <p>jlawless37@gmail.com</p>
-        </div>
-        <div class="box2">
-            <h2>Tutoring Services</h2>
-            <p>
-                Lawless Language Arts is a tutoring service that has been established for over fifteen years. Our students are located from Michigan to California, aged pre-K to adults.<br>
-                The focus of our tutoring is generally English and Language Arts, but we offer expertise in ACT and SAT preparation in both the English and Science sections of the tests, AP test, college entry assistance, English as a Second Language, teaching early reading and writing, and business and career communications.<br>
-                Our students have been successful in increasing school grades, developing language skills, raising ACT and SAT scores, gaining college acceptance to preferred schools, and winning scholarships and writing awards.
-                We work one-on-one, in person and remotely with students and focus on areas that need improvement. We always go the extra mile for achievement and encourage students to build their strengths. In the process, we have fun and enjoy learning.
-            </p>
-        </div>
-        <div class="box3">
-            <h2>About Me</h2>
-            <p>
-              Ms. Janet Lawless, M.A. has over twenty years of teaching experience, teaches college English and private school English classes, and is a published author of both news articles and creative work. Her experience has made her very familiar with K-12 and college ELA curriculum and ACT, SAT, English AP, and other standardized tests. She has a passion for teaching and students, and the growth of her tutoring services is one of her proudest accomplishments.
-
-            </p>
-        </div>
-        <div class="box4">
-            <h2>Questions</h2>
-            <form>
-                <div class="container">
-                  <label for="email"><b>Name</b></label>
-                  <input type="text" placeholder="Name: " name="name" required>
-              
-                  <label for="psw"><b>Email</b></label>
-                  <input type="text" placeholder="Email: " name="email" required>
-              
-                  <label for="psw-repeat"><b>Question</b></label>
-                  <input type="text" placeholder="Question: " name="password" required>
-                  <div class="clearfix">
-                    <button type="submit" class="signupbtn">Ask Question</button>
-                  </div>
+      <div class="businessDescription">
+        <h2>Tutoring Services</h1>
+        <p>
+          Lawless Language Arts is a tutoring service that has been established for over fifteen years. Our students are located from Michigan to California, aged pre-K to adults.<br>
+          The focus of our tutoring is generally English and Language Arts, but we offer expertise in ACT and SAT preparation in both the English and Science sections of the tests, AP test, college entry assistance, English as a Second Language, teaching early reading and writing, and business and career communications.<br>
+          Our students have been successful in increasing school grades, developing language skills, raising ACT and SAT scores, gaining college acceptance to preferred schools, and winning scholarships and writing awards.<br>
+          We work one-on-one, in person and remotely with students and focus on areas that need improvement. We always go the extra mile for achievement and encourage students to build their strengths. In the process, we have fun and enjoy learning.
+        </p>
+      </div>
+      <div class="aboutme">
+        <h2>About Me</h1>
+        <p>
+          Ms. Janet Lawless, M.A. is the director. She has over twenty years of teaching experience, teaches college English and private school English classes, and is a published author of both news articles and creative work. Her experience has made her very familiar with K-12 and college ELA curriculum and ACT, SAT, English AP, and other standardized tests. She has a passion for teaching and students, and the growth of her tutoring services is one of her proudest accomplishments.
+        </p>
+      </div>
+      <div class="extraContact">
+        <p>248 808 2790 </p><br>
+        <p>jlawless37@gmail.com</p>
+      </div>
+      <div class="questions">
+        <h2>Questions</h2>
+            <form action="/">
+              <div class="container">
+                <label for="email"><b>Name</b></label>
+                <input type="text" placeholder="Name: " name="name" required>
+            
+                <label for="psw"><b>Email</b></label>
+                <input type="text" placeholder="Email: " name="email" required>
+            
+                <label for="psw-repeat"><b>Question</b></label>
+                <input type="text" placeholder="Question: " name="password" required>
+                <div class="clearfix">
+                  <button type="submit" class="signupbtn">Ask Question</button>
                 </div>
-              </form>              
+              </div>
+            </form>
+      </div>
+      <div id="footer">
+        <div class="cont">
+          <ul class="contact">
+            <li style="text-align: left;">
+              <p><i class="fab fa-facebook fa-3x"></i></p>
+              <p><strong>Facebook</strong></br><a href="https://www.facebook.com/lawlesslanguagearts">Lawless Language Arts Facebook Page</a></p>
+            </li>
+            <li style="text-align: left;">
+              <p><i class="fa fa-phone fa-3x"></i></p>
+              <p><strong>Phone</strong></br>(248)-808-2790</p>
+            </li>
+            <li style="text-align: left;">
+              <p><i class="fa fa-envelope fa-3x"></i></p>
+              <p><strong>Email</strong></br>lawlesslanguagearts03@gmail.com</p>
+            </li>
+          </ul>
         </div>
-        <div class="box5">
-          <div class="cont">
-            <ul class="contact">
-              <li style="text-align: left;">
-                <p><i class="fa fa-map-marker fa-3x"></i></p>
-                <p><strong>Lorem Ipsum Ltd.</strong></br>Random str. 8, Pellenstique</p>
-              </li>
-              <li style="text-align: left;">
-                <p><i class="fa fa-phone fa-3x"></i></p>
-                <p><strong>Phone</strong></br>00 55 (20) 3334 4444</p>
-              </li>
-              <li style="text-align: left;">
-                <p><i class="fa fa-envelope fa-3x"></i></p>
-                <p><strong>Email</strong></br>office@loremipsum.com</p>
-              </li>
-            </ul>
-          </div>
-        </div>
+    </div>
     </main>
 </body>
 </html>
@@ -91,7 +199,6 @@
         <img src="{{ project.image.url }}" class="img-fluid mb-2"> {% endif %}
         <h3>{{ project.title }}</h3>
         <p>{{ project.description }}</p>
-
     </div>
     {% endfor %}
 </div>
