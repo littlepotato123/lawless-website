@@ -1,0 +1,14 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+
+<h1 id="blogtitle" class="font-weight-bold text-center">Resources</h1>
+
+{% for blog in resources %}
+<div class="row justify-content-center my-3">
+    <div class="col-md-10">
+        <h2>{{ blog.title }}</h2>
+        <h4>{{ blog.description|striptags }}</h4>
+        <a href="{% blog.url %}" class="btn btn-primary">View Resource</a>
+    </div>
+</div>
+
+{% endblock %}

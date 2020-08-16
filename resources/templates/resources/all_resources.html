@@ -1,0 +1,23 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+
+<style>
+    body {
+      background-color: #a2d5f2;
+    }
+  </style>
+
+<h1 id="blogtitle" class="font-weight-bold text-center">Resources</h1>
+
+<h3 class="text-center mb-5">Links to English-Related Resources, Competitions, and Opportunities</h3>
+
+{% for event in events %}
+<div class="row justify-content-center my-3">
+    <div class="col-md-10">
+        <h2>{{ event.title }}</h2>
+        <h5 class="text-muted">{{ event.description }}</h5>
+        <a href="{{ event.link }}" class="btn btn-primary">View Resource</a>
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}
